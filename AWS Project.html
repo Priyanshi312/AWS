@@ -1,0 +1,130 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q6 - Student Feedback Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf2f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 350px;
+            max-width: 100%;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            color: #24527a;
+        }
+
+        p {
+            text-align: center;
+            color: gray;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #24527a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #163c5c;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+                margin: 20px auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Q6. Student Feedback Form</h2>
+
+        <p>Please share your feedback about the college course.</p>
+
+        <form>
+
+            <label>Student Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Select Subject:</label>
+            <select required>
+                <option value="">Select Subject</option>
+                <option>Mathematics</option>
+                <option>Computer Science</option>
+                <option>Digital Logic Design</option>
+                <option>Physics</option>
+                <option>English</option>
+            </select>
+
+            <label>Rating (1 to 5):</label>
+            <select required>
+                <option value="">Select Rating</option>
+                <option>1 - Poor</option>
+                <option>2 - Fair</option>
+                <option>3 - Good</option>
+                <option>4 - Very Good</option>
+                <option>5 - Excellent</option>
+            </select>
+
+            <label>Feedback:</label>
+            <textarea placeholder="Write your feedback here"
+            required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
